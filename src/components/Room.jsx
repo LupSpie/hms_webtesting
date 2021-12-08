@@ -1,6 +1,7 @@
 import { selectPeers, useHMSStore } from "@100mslive/hms-video-react";
 import Footer from "../components/Footer/Footer";
 import User from "../components/Tile/User";
+import ChatContainer from './Chat/ChatContainer'
 
 const Room = () => {
     const peers = useHMSStore(selectPeers);
@@ -12,6 +13,7 @@ const Room = () => {
                         <User key={p.id} peer={p} />
                     ))}
                 </div>
+                <ChatContainer />
             </div>
             <Footer count={peers.length} />
         </div>

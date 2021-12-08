@@ -1,0 +1,64 @@
+.modalContainer {
+    width: 500px;
+    height: 100vh;
+    border-radius: 12px 12px 0 0;
+    background-color: #292534;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.modalBackground {
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modalContainer h2 {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.modalContainer .italics {
+    color: #6c7074;
+    font-style: italic;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    border: none;
+    color: white;
+    border-radius: 100%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modalContainer .body {
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#cancelBtn {
+    background-color: crimson;
+}

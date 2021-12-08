@@ -18,13 +18,13 @@ const Permission = ({ audioTrack, id }) => {
             </div>
             <div className='menu-items py-2 flex-col bg-gray-900 text-gray-500 rounded-md'>
                 <button className={btnClass} onClick={() => mutePeer()}>
-                    Mute
+                    Silenciar
                 </button>
                 <button className={btnClass} onClick={() => changeRole("listener")}>
-                    Make Listener
+                    Tornar Ouvinte
                 </button>
                 <button className={btnClass} onClick={() => changeRole("speaker")}>
-                    Make Speaker
+                    Tornar Locutor
                 </button>
             </div>
         </div>
